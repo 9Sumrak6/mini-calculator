@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>HTML Calculator</title>
+<style type="text/css">
+	input[type=text] {
+		width: 291px;
+		height: 35px;
+		border-radius: 10px
+	}
+	input[type=button] {
+		width: 55px;
+		height: 35px;
+		border-color: purple;
+		border-radius: 10px;
+	}
+	div {
+		text-align: center;
+		margin-top: 300px;
+	}
+</style>
+</head>
+<body bgcolor= "#fffff0">
+	<div>
+		<input id="enter" type="text"><br>
+		<input type="button" value="cos" onClick="document.getElementById('enter').value += 'cos('">
+		<input type="button" value="С" onClick="document.getElementById('enter').value = ''">
+		<input type="button" value="%" onClick="document.getElementById('enter').value += '%'">
+		<input type="button" value="delete" onClick="document.getElementById('enter').value = document.getElementById('enter').value.substring(0, document.getElementById('enter').value.length - 1)">
+		<input type="button" value="-" onClick="document.getElementById('enter').value += '-'"><br>
+		<input type="button" value="sin" onClick="document.getElementById('enter').value += 'sin('">
+		<input type="button" value="1" onClick="Change(1)">
+		<input type="button" value="2" onClick="Change(2)">
+		<input type="button" value="3" onClick="Change(3)">
+		<input type="button" value="+" onClick="document.getElementById('enter').value += '+'"><br>
+		<input type="button" value="tan" onClick="document.getElementById('enter').value += 'tan('">
+		<input type="button" value="4" onClick="Change(4)">
+		<input type="button" value="5" onClick="Change(5)">
+		<input type="button" value="6" onClick="Change(6)">
+		<input type="button" value="*" onClick="document.getElementById('enter').value += '*'"><br>
+		<input type="button" value="cot" onClick="document.getElementById('enter').value += 'cot('">
+		<input type="button" value="7" onClick="Change(7)">
+		<input type="button" value="8" onClick="Change(8)">
+		<input type="button" value="9" onClick="Change(9)">
+		<input type="button" value="/" onClick="document.getElementById('enter').value += '/'"><br>
+		<input type="button" value="sqrt" onClick="document.getElementById('enter').value += 'sqrt('">
+		<input type="button" value="e" onClick="document.getElementById('enter').value += 'e'">
+		<input type="button" value="0" onClick="Change(0)">
+		<input type="button" value="." onClick="document.getElementById('enter').value += '.'">
+		<input type="button" value="=" onClick="Calcul()">
+	</div>
+	<script src="calc.js"></script>
+</body>
+</html>
